@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Website 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/富士山2.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="Logo" />
+        <h1>Demo Website 2</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> Japan travel guide</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-right-to-bracket"></i> Member Login</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book"></i> My Appointments</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-address-book"></i> Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filer"></div>
+        <h3>Special holiday.<br />Plan a Japan travel itinerary and relax.</h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>Theme</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/北海道雪景.jpg" alt="Hokkaido snowing scene" />
+            <p>Hokkaido snowing scene</p>
+          </div>
+          <div class="circle">
+            <img src="./images/日本壽司.jpg" alt="Japanese sushi and food" />
+            <p>Japanese sushi and food</p>
+          </div>
+          <div class="circle">
+            <img
+              src="./images/富士山.jpg"
+              alt="Mount Fuji scenery and hot springs"
+            />
+            <p>Mount Fuji scenery<br />and hot springs</p>
+          </div>
+          <div class="circle">
+            <img
+              src="./images/清水寺.jpg"
+              alt="Kiyomizu Temple in Kyoto, the ancient capital"
+            />
+            <p>Kiyomizu Temple in Kyoto,<br />the ancient capital</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3>
+          Start planning your itinerary today to find what works best for you.
+        </h3>
+      </section>
+
+      <section class="google-map">
+        <h3>Geographical location of Japan</h3>
+        <p>
+          Geographically, Japan belongs to Northeast Asia, with the Pacific
+          Ocean to the east, Siberia, the Korean Peninsula, and mainland China
+          in Eurasia to the west, the Sea of Japan, the Korean Strait, and the
+          East China Sea to the west, Taiwan and the Mariana Islands to the
+          south, and Taiwan and the Mariana Islands to the north. The Soya
+          Strait and the Sea of Okhotsk are adjacent to Sakhalin Island and the
+          Kuril Islands. Japan has a comfortable and pleasant climate all year
+          round, and the four seasons change distinctly. It is warm in the south
+          and colder in the north. Especially in winter when the northwest
+          monsoon is blowing, there will be a lot of snow on the Sea of Japan
+          side. On the other hand, on the Pacific side, dry and sunny days
+          called "winter sunshine" will continue.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5300755.760441594!2d137.10323600911116!3d35.18148688884259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sus!4v1664253921541!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="logo" />
+        <h3>Japan travel guide</h3>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
